@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 56px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color:none;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 10px,34px;
+    text-align: center;
+}
+#logo img{
+     height: 59px;
+    /* margin: 3px 6px; */
+    border-radius: 50%;
+    margin:auto;
+
+}
+#navbar ul{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 30px;
+    
+}
+#navbar ul li a{
+    color:black;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a:hover{
+    color:crimson;
+    
+}
+/* Home bar */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    /* background: url('../images/transactions.bg.jpg') no-repeat center center/cover; */
+    background: url('../images/bg.jpg') no-repeat center center/cover; 
+    /* background-color: #43d5ea; */
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 700px;
+    z-index:-1;
+    opacity:0.70;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family:'bree serif';
+    
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin-top: 30PX;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+#services .box{ 
+    padding: 20px;
+    margin: auto;
+    
+    /* border-radius: 28px; */
+    /* background: #f2f2f2; */
+    margin-bottom: 10px;
+    /* border: 2px solid brown; */
+    
+}
+
+#services .box img{ 
+   height: 200px;
+   width: 220px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+#head{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor:pointer;
+    text-decoration: none;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+}
+#services .box a{
+    text-decoration: none;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
+.primary{
+    margin-top: 150px;
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+    padding: 12px;
+}
+.secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+#head{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+footer{
+    background:black;
+    color: white;
+    padding: 10px 25px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.primary .center{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-2{
+    
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 135px;
+    padding: 20px;
+    width: 33%;
+    border-radius: 19px;
+    display: block;
+    margin-bottom: 40px;
+    background-color: rgb(138 136 135);
+    
+}
+.form-group input{
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+    display: block;
+    width: 90%;
+    padding: 8px;
+    border: 2px solid black;
+    margin: 15px auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.container-2 h1{
+    text-align: center;
+}
+.container-2 button{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+.container-2 img{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+.btn-1{
+    display: flex;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor:pointer;
+    
+    
+}
+.btn-1:hover{
+    color: black;
+    background-color: white;
+}
+#home-1::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 700px;
+    z-index:-1;
+    /* opacity:0.70; */
+}
+.heading{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#home-transferdetail::before{ 
+    content: "";
+    position: absolute;
+    /* background: url('../images/bg.jpg') no-repeat center center/cover; */
+    top:0px;
+    left:0px;
+    width:100%;
+    height:700px;
+    z-index:-1;
+    opacity:0.70;
+    max-height : 2000px;
+    background-size: cover;
+    
+}
+table{
+    margin:auto;
+    margin-top: 50px;
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    border-collapse:separate;
+    border-spacing: 0 15px;
+    /* background:url('../transactions.bg.jpg') no-repeat center center/cover ; */
+    margin-bottom: 100px;
+    background-color:#c6e9ee;
+    
+}
+
+th{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    background-color: #11b3ca;
+    color: black;
+    /* text-align: center; */
+}  
+td {
+    width: 200px;
+    text-align: center;
+    font-size:1.2rem;
+    padding: 5px;
+    /* font-weight: bold; */
+  } 
+  .container{
+      margin: 120px 200px 100px 200px;
+      /* background-color: rgb(236, 233, 233); */
+      /* background-color: white; */
+      
+  }
+.btn-primary{
+    display: inline-block;
+}
+.border-primary{
+    display:inline-block;
+    background-color:white;
+    
+    margin-right: 10px;
+    padding:0px;
+    margin:auto;
+    margin-left: 0px;
+    border-radius: 10px;
+    
+}
+.border-success{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    padding:0px;
+    
+    margin:auto;
+    margin-left: 20px;
+    margin-right: 0px;
+    justify-content: right;
+    
+    
+}
+.bg-primary{
+    background-color: #1371dc;
+    padding:10px;
+    width: 485px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    
+}
+.bg-success{
+    background-color:#0d900d;
+    padding:10px;
+    width: 485px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.col{
+    display: inline-block;
+}
+.text-success p{
+    padding: 10px;
+}
+.text-success p a{
+    text-decoration: none;
+    color: #0d900d;
+}
+.text-primary p{
+    padding:10px;
+    color: #1371dc;
+}
+#home-3::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    /* background-color: aqua; */
+    top:0px;
+    left:0px;
+    width:100%;
+    height:900px;
+    z-index:-1;
+    opacity:0.70;
+    /* max-height: 2000px; */
+    
+}
+h5{
+    font-size: 1rem;
+    margin: 12px 5px 12px 5px;
+}
+.btn-lg{
+    background-color: #1371dc;
+    margin: 30px 15px 50px 0px;
+    height: 30px;
+    font-size: 1.4rem;
+}
+#home-transfermoney::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/bg1.jpg') no-repeat center center/cover; 
+    top:0px;
+    left:0px;
+    width:100%;
+    height:700px;
+    z-index:-1;
+    opacity:0.70;
+    /* max-height: 2000px; */
+    
+}
+.container-3{
+    margin-top: 130px;
+}
+.container-3 .center{
+    font-size: 1.3rem;
+}
+.label-1{
+    margin: 30px 260px 20px 150px;
+}
+.label-1 select{
+    height: 30px;
+    border:2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#sender{
+    width: 100%;
+    
+}
+.label-2{
+    margin: 30px 263px 20px 150px;
+}
+.label-2 .amount-transfer input{
+    height: 30px;
+    border:2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+.label-3{
+    margin: 30px 260px 20px 150px;
+}
+.label-3 select{
+    height: 30px;
+    border:2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#reciever{
+    width: 100%;
+    
+}
+h4{
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+.btn-4{
+    display: flex;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 30px 260px 20px 150px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor:pointer;
+    text-decoration: none;
+    height: 40px;
+    justify-content: center;
+
+}
+.btn-4:hover{
+    color: black;
+    background-color: rgb(58, 7, 243);
+}
