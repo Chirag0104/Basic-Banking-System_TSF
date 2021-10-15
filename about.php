@@ -1,5 +1,4 @@
 <?php
-      // $title = 'Index';
       require_once 'includes/navbar.php';
       require_once 'db/conn.php';
   ?>
@@ -64,7 +63,6 @@
 
 </div>
 <?php
-      // $title = 'Index';
       require_once 'includes/footer.php'
   ?>
   </body>
