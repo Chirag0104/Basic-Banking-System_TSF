@@ -1,5 +1,4 @@
 <?php
-      // $title = 'Index';
       require_once 'includes/navbar.php';
       include 'db/conn.php';
 
@@ -14,8 +13,8 @@
 
       $detail = $crud->transaction_data();
 
+?>
 
-  ?>
   <div id="home-transferdetail">
 
     <div class="heading">
@@ -35,8 +34,6 @@
 
         <tbody>
 
-
-            
                 <?php  
                          while($t=$detail->fetch(PDO::FETCH_ASSOC)){ ?>
                          <tr>
@@ -45,26 +42,29 @@
                             <td> <?php echo $t['Sender_name']; ?> </td>
                             <td> <?php echo $t['Reciever_Name']; ?> </td>
                             <td> <?php echo $t['Amount']; ?> </td>
-                            <td> <?php echo $t['Date'];?> </td>
+                            <td> <?php
+                            // To convert time in IST on webhost server 
+                            // $startTime = date($t['Date']);
+                            // $convertedTime = date('Y-m-d H:i:s',strtotime('+5 hour +30 minutes',strtotime($startTime)));
+                            // echo $convertedTime;
+                            echo $t['Date'];?> </td>
                          </tr>    
                         <?php }
 
                     ?>
-                
-                
             </tr>
-            
-   
 
         </tbody>
     </table>
 
 </div>
 <?php
-      // $title = 'Index';
       require_once 'includes/footer.php'
   ?>
 </div>
 </body>
 
 </html>
+
+
+
