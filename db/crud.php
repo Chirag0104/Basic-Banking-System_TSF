@@ -120,7 +120,8 @@
                              
                             //  $sender = $sql1['name'];
                             //  $receiver = $sql2['name'];
-                             $sql = "INSERT INTO transfer_data(`Sender_name`, `Amount`, `Reciever_Name`) VALUES ('$SName','$Amount','$RName')";
+                            // INSERT INTO `transfer_data` (`SNo`, `Sender_name`, `Amount`, `Reciever_Name`, `Date`) VALUES ('50', 'chirag', '5000', 'sanath', current_timestamp());
+                             $sql = "INSERT INTO transfer_data(`Sender_name`, `Amount`, `Reciever_Name`,`Date`) VALUES ('$SName','$Amount','$RName',current_timestamp())";
                              $query = $this->db->query($sql);
              
                              if($query){
