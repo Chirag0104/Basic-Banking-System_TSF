@@ -43,10 +43,6 @@
                             <td> <?php echo $t['Reciever_Name']; ?> </td>
                             <td> <?php echo $t['Amount']; ?> </td>
                             <td> <?php
-                            // To convert time in IST on webhost server 
-                            // $startTime = date($t['Date']);
-                            // $convertedTime = date('Y-m-d H:i:s',strtotime('+5 hour +30 minutes',strtotime($startTime)));
-                            // echo $convertedTime;
                             echo $t['Date'];?> </td>
                          </tr>    
                         <?php }
